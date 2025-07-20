@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetBee - Personal Finance Tracker</title>
+  <link rel="stylesheet" href="budget.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BudgetBee 🐝</h1>
+    <h2>Personal Finance Tracker</h2>
+
+    <div class="form">
+      <input type="text" id="desc" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button onclick="addTransaction()">Add</button>
+    </div>
+
+    <div class="summary">
+      <p><strong>Total Balance:</strong> ₹<span id="balance">0</span></p>
+      <p><strong>Total Income:</strong> ₹<span id="total-income">0</span></p>
+      <p><strong>Total Expense:</strong> ₹<span id="total-expense">0</span></p>
+    </div>
+
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="budget.js"></script>
+</body>
+</html>
